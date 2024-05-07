@@ -1,0 +1,23 @@
+/* globales */
+/* 
+color principal 
+fucsia  = #ff12a5
+
+*/
+
+
+
+html{
+    font-size: 62.5%
+}
+body{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
