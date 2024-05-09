@@ -54,21 +54,52 @@ img{
     display: flex;
     justify-content: space-between;
     padding: 0 5rem;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     align-items: center;
+    z-index: 100;
 
-
-    background: rgba(255, 255, 255, 0.10);
+    background: rgba(0, 0, 0, 0.90);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(3.7px);
     -webkit-backdrop-filter: blur(3.7px);
 }
+.menu-img{
+    width: 5rem;
+    height: auto;
+    cursor: pointer;
+}
+
+@media(max-width: 700px){
+    .menu{
+        padding: 3rem;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        z-index: 100;
+        background-color:  black;
+        text-align: right;
+        display: none;
+    }
+    .menu li a{
+        font-size: 3rem;
+        
+    }
+
+  
+}
+
 @media(min-width: 700px){
 
+    .menu-img{
+        display: none;
+    }
     .menu{
         display: flex;
         gap: 5rem;
-     
     }
 }
 .relative{
@@ -76,9 +107,26 @@ img{
 }
 .logo{
     font-size: 3rem;
+    padding: 2rem;
+    font-weight: bold;
 }
 .menu{
     font-size: 2rem;
+}
+
+/*hover del menu*/
+.menu-neon, .menu-publicidad{
+    transition: all 0.5s ease;
+}
+
+.menu-neon:hover{
+    color: #ff12a5;
+}
+
+
+.relleno{
+    height: 8.5rem;
+    background-color: black;
 }
 
 /* Contenido*/
@@ -88,29 +136,53 @@ img{
     margin: 3rem;
 }
 .banner{
-
     height: 50rem;
-    background-image: url('/build/img/banner_principal.jpg');
+    background-image: url('/build/img/banner-colorido.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
     background-size: cover;
     position: relative;
 }
+
+/* .sombra-banner{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+} */
+.text-banner{
+    position: absolute;
+    
+    top: 120px;
+    left: 0px;
+    right: 0;
+    text-align: center;
+}
 .banner p{
     margin: 0;
-    font-size: 5rem;
+    font-size: 10rem;
     font-weight: bold;
-    
+    text-transform: uppercase;
+}
+
+@media(max-width:700px){
+    .banner p{
+        font-size: 6rem;
+    }
 }
 
 /*iconos*/
 .informacion{
-    margin-top: 10rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
    
 }
+
+
 .icono{
     display: flex;
     flex-direction: column;
@@ -119,7 +191,7 @@ img{
     margin-bottom: 2rem;
     flex: 1;
 
-    background: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.20);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(3.7px);
     -webkit-backdrop-filter: blur(3.7px);
@@ -162,6 +234,7 @@ img{
     font-weight: bold;
     transition: all 1s ease;
  }
+
 
 
 /*footer*/

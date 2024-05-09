@@ -1,4 +1,45 @@
 
+/*creecer tu negocio*/
+
+.crecer p{
+    font-size: 3rem;
+    margin: 0;
+}
+.ultimo-crecer{
+    text-align: right;
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+}
+@media(min-width:1400px){
+    .crecer{
+        display: flex;
+        gap: 1rem;
+        
+    }
+
+    .crecer div{
+        padding: 1rem;
+        flex: 1;
+    }
+}
+.icono-crecer{
+    width: 5rem;
+}
+
+
+    .crecer ul{
+        display: flex;
+        margin: 5rem 0;
+        gap: 2rem;
+        flex-wrap: wrap;
+        
+    }
+
+.crecer ul div{
+    flex-grow: 1;
+}
+
+
 
 /*Serrvicios*/
 .repoxi-neon, .repoxi-publicidad, .repoxi-rotulacion
@@ -28,14 +69,14 @@
     -webkit-backdrop-filter: blur(3.7px);
 }
 
-.servicio-logo{
-    font-size: 100vw;
+/* .servicio-logo{
+    flex: 1;
 }
 .servicio-subtitulo{
     text-align: right;
     color: #ff12a5;
-    font-size: 20vw;
-}
+    flex: 0.5;
+} */
 
 .slider{
     flex: 1;

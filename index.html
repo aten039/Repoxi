@@ -9,8 +9,9 @@
 
     <script src="build/js/jquery.js" type="text/javascript"></script>
     <script src="build/js/jquery.bxslider.min.js" type="text/javascript"></script>
-    <script src="build/js/index.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/aa20b3c854.js" crossorigin="anonymous"></script>
+
+    <script src="build/js/index.js" type="text/javascript"></script>
 
     <link href="styles/style.css" rel="stylesheet">
     <link href="styles/jquery.bxslider.min.css" rel="stylesheet">
@@ -21,23 +22,71 @@
 <body>
 
     <header class="header">
-        <h3 class="logo">repoxi</h3>
-        <nav class="relative">
+        <a href="index.html" class="logo">repoxi</a>
+        <nav class="">
+            <img class="menu-img" src="build/img/menu.png" alt="menu">
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="publicidad.html">Publicidad</a></li>
-                <li><a href="neon.html">Neon</a></li>
+                <li><a  href="index.html">Inicio</a></li>
+                <li><a class="menu-publicidad" href="publicidad.html">Publicidad</a></li>
+                <li><a class="menu-neon" href="neon.html">Neon</a></li>
                 <li><a href="rotulacion.html">Rotulacion</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="relleno"></div>
+
     <main class="contenido">
 
         <div class="banner">
-            <p>Expertos en Publicidad</p>
+            <div class="sombra-banner"></div>
+            <p class="text-banner">Expertos en Publicidad</p>
         </div>
 
+        <div>
+            <h2 class="titulo">Haz Crecer Tu Negocio.</h2>
+            
+            <div class="contenedor crecer">
+
+                <div>
+                    <p>En repoxi trabajamos para darte el mejor servicio. Nuestras soluciones se basan en:</p>
+                    <ul>
+                        <div>
+                            <div class="icono-crecer">
+                                <img src="build/img/innovacion.png" alt="icono palabra">
+                            </div>
+                            <p>Innovación</p>
+                        </div>
+
+                        <div>
+                            <div class="icono-crecer">
+                                <img src="build/img/creeatividad.png" alt="icono palabra">
+                            </div>
+                            <p>Creatividad</p>
+                        </div>
+
+                        <div>
+                            <div class="icono-crecer">
+                                <img src="build/img/confianza.png" alt="icono palabra">
+                            </div>
+                            <p>Confianza</p>
+                        </div>
+                        
+                    </ul>
+                    
+                    <p>El mundo conocera tu marca.</p>
+                    <p class="ultimo-crecer">Haz realidad tus ideas.</p>
+                </div>
+                
+                <div>
+                    <img src="build/img/laser.jpg" alt="imagen laser">
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <h3 class="titulo conocenos">Conocenos</h3>
         <div class="informacion contenedor">
                 <div class="icono">
                     <img src="build/img/prregunta.png" alt="icono seguridad" loading="lazy">
@@ -62,7 +111,9 @@
         </div>
        
         <section class="contenedor">
+
             <h2 class="titulo">Servicios</h2>
+
             <div class="repoxi-neon servicio">
                 <div class="informacion-servicios">
                     <div>
@@ -94,7 +145,9 @@
                 <div class="informacion-servicios">
                    
                     <div>
-                        <img src="build/img/logopng.png">
+                        <!-- <img src="build/img/logopng.png"> -->
+                        <h2 class="servicio-logo">repoxi</h2>
+                        <p class="servicio-subtitulo">PUBLI CITY</p>
                     </div>
                     <h2 class="sub-titulo">Quieres que tu negocio destaque entre la multitud?</h2>
                     <p>Nuestros letreros neon son la solución!</p>
@@ -104,7 +157,7 @@
                         <p>Personalización</p>
                     </ul>
                     
-                    <a class="boton boton_servicio-rotulacion" href="rotulacion.html">ver mas</a>
+                    <a class="boton boton_servicio-rotulacion" href="publicidad.html">ver mas</a>
                 </div>
                 <div class="slider">
                     <div class="bxslider">
@@ -117,7 +170,7 @@
             </div>
 
 
-            <div class="repoxi-rotulacion servicio">
+            <!-- <div class="repoxi-rotulacion servicio">
                 <div class="informacion-servicios">
                    
                     <div>
@@ -132,7 +185,7 @@
                         <p>Personalización</p>
                     </ul>
                     
-                    <a class="boton boton_servicio-publicidad" href="publicidad.html">ver mas</a>
+                    <a class="boton boton_servicio-publicidad" href="rotulacion.html">ver mas</a>
                 </div>
                 <div class="slider">
                     <div class="bxslider">
@@ -142,9 +195,7 @@
                     </div>
                 </div>
                 
-            </div>
-
-
+            </div> -->
         </section>
 
        
