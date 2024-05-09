@@ -1,10 +1,11 @@
 /* globales */
+
 /* 
-color principal 
+color principal neon
 fucsia  = #ff12a5
 
+fuente poppins
 */
-
 
 
 html{
@@ -13,11 +14,186 @@ html{
 body{
     box-sizing: border-box;
     font-size: 16px;
+    background-color: black;
+    color: white;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 a{
     text-decoration: none;
+    color: white;
 }
 ul{
     list-style: none;
+}
+img{
+    width: 100%;
+}
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Fuentes */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+/*Headeer*/
+.header{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+
+    align-items: center;
+
+
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+}
+@media(min-width: 700px){
+
+    .menu{
+        display: flex;
+        gap: 5rem;
+     
+    }
+}
+.relative{
+    position: relative;
+}
+.logo{
+    font-size: 3rem;
+}
+.menu{
+    font-size: 2rem;
+}
+
+/* Contenido*/
+.titulo{
+    text-align: center;
+    font-size: 10vw;
+    margin: 3rem;
+}
+.banner{
+
+    height: 50rem;
+    background-image: url('/build/img/banner_principal.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.banner p{
+    margin: 0;
+    font-size: 5rem;
+    font-weight: bold;
+    
+}
+
+/*iconos*/
+.informacion{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+   
+}
+.icono{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    flex: 1;
+
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+}
+.icono img{
+    width: 100px;
+    margin-top: 4rem;
+}
+
+
+@media(min-width: 1000px){
+
+    .icono{
+        margin: 0;
+    }
+    .informacion{
+        flex-direction: row;
+        gap: 2rem;
+     
+    }
+}
+
+.icono-titulo{
+    font-size: 3rem;
+}
+.icono-descripcion{
+    font-size: 2rem;
+}
+
+.boton{
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-weight: bold;
+    transition: all 1s ease;
+ }
+
+
+/*footer*/
+footer{
+    margin-top: 3rem;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+@media(min-width:700px){
+    .footer{
+        flex-direction: row;
+    }
+    
+}
+/* reedes sociales*/
+
+.redes-sociales{
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 5rem ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 

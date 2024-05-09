@@ -1,0 +1,84 @@
+
+
+/*Serrvicios*/
+.repoxi-neon, .repoxi-publicidad, .repoxi-rotulacion
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+@media(min-width:1000px){
+    .repoxi-neon, .repoxi-rotulacion{
+        flex-direction: row;
+    }
+    
+    .repoxi-publicidad{
+       
+        flex-direction: row-reverse;
+      
+    }
+}
+.servicio{
+    margin: 2rem 0;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+}
+
+.servicio-logo{
+    font-size: 100vw;
+}
+.servicio-subtitulo{
+    text-align: right;
+    color: #ff12a5;
+    font-size: 20vw;
+}
+
+.slider{
+    flex: 1;
+    padding: 1rem;
+}
+.bxslider img{
+    width: 100%;
+}
+
+
+.informacion-servicios{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    flex: 1;
+}
+.informacion-servicios p{
+    font-size: 2rem;
+}
+.informacion-servicios ul{
+    margin: 0;
+}
+
+.servicio-logo{
+    font-size: 20vw;
+    margin: 0;
+}
+
+@media(min-width:1000px){
+    .servicio-logo{
+        font-size: 10rem;
+
+    }
+}
+
+
+.sub-titulo{
+    margin-top: 2rem;
+}
+
+
+/*botones hover*/
+
+.boton_servicio-neon:hover{
+    background-color: #ff12a5;
+}
