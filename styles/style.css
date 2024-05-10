@@ -146,6 +146,10 @@ img{
     font-size: 2rem;
 }
 
+.menu-activo{
+    color: #ff12a5;
+}
+
 
 /*hover del menu y boton*/
 .menu-neon, .menu-publicidad, .menu-hover{
