@@ -133,9 +133,39 @@
         </section>
 
 
-        <section class="contenedor">
+        <section class="contenedor crea-neon-container">
             <h2 class="titulo">Crea Tu Neon</h2>
-            <div></div>
+            <div class="form-container">
+
+                <form class="form-neon">
+                    <div>
+                        <label class="text" for="text">Introduce el Texto</label>
+                        <input
+                        type="text"
+                        id="text"
+                        name="text"
+                        class="text"
+                        maxlength="20"
+                        >
+                    </div>
+                    <div>
+                        <label class="fuentes" for="fuente">Elije la fuente</label>
+                        <select class="fuentes" name="fuente" id="fuentes">
+                            <option class="genit" value="genit">Genit demo</option>
+                            <option class="mgScript" value="mgScript">Mg Script</option>
+                            <option class="mgSerif" value="mgSerif">Mg Serif</option>
+                            <option class="monsieur" value="monsieur">Monsieur La Doulaise</option>
+                            <option class="ruthligos" value="ruthligos">Ruthligos</option>
+                        </select>
+                    </div>
+                    <input type="submit" class="boton" value="Cotiza Tu Neon" id="boton-form">
+                </form>
+
+                <div class="neon-crea">
+                    <h3 class="genit" >Prueba</h3>
+                </div>
+                
+            </div>
         </section>
 
     </main>

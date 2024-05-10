@@ -3,6 +3,7 @@
 /* 
 color principal neon
 fucsia  = #ff12a5
+azul = #0b00e2
 
 color header 
 rgba(0, 0, 0, 0.90)
@@ -13,7 +14,20 @@ rgba(255, 255, 255, 0.10)
 
 fuente poppins
 */
+/* Fuentes */
 
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 
 html{
     font-size: 62.5%
@@ -41,20 +55,7 @@ img{
     margin: 0 auto;
 }
 
-/* Fuentes */
 
-@font-face {
-    font-family: 'Poppins';
-    src: url(/font/Poppins-Bold.ttf);
-    font-weight: bold;
-    font-style: bold;
-}
-@font-face {
-    font-family: 'Poppins';
-    src: url(/font/Poppins-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
 /*Headeer*/
 .header{
     margin: 0;
@@ -139,10 +140,10 @@ img{
     border: 2px solid #ff12a5;
 }
 .boton_servicio-publicidad:hover{
-    background-color: blue;
+    background-color: #0b00e2;
 }
 .boton_servicio-publicidad{
-    border: 2px solid blue;
+    border: 2px solid #0b00e2;
 }
 
 .relleno{
@@ -154,7 +155,8 @@ img{
 .titulo{
     text-align: center;
     font-size: 10vw;
-    margin: 3rem;
+    margin: 10rem 0 3rem 0 ;
+    margin-top: 10rem;
 }
 @media(min-width:1000px){
     .titulo{

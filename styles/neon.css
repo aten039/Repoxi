@@ -1,3 +1,53 @@
+/*Fuentes para los neones*/
+
+@font-face {
+    font-family: 'Genit';
+    src: url(/font/neon/genit_demo.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+.genit{
+    font-family: Genit, Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'MgScript';
+    src: url(/font/neon/MG_script.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+.mgScript{
+    font-family: 'MgScript', Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'MgSerif';
+    src: url(/font/neon/MG_serif.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+.mgSerif{
+    font-family: 'MgSerif', Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'Monsieur';
+    src: url(/font/neon/MonsieurLaDoulaise.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.monsieur{
+    font-family: 'Monsieur', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Ruthligos';
+    src: url(/font/neon/Ruthligos.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.ruthligos{
+    font-family: 'Ruthligos', Arial, Helvetica, sans-serif;
+}
+
+
 /*menu*/
 
 .menu-neon{
@@ -175,3 +225,74 @@
 
 
 /*crea tu neon*/
+
+.form-container{
+    background-color: rgba(250, 250, 250, 0.1);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.form-neon div{
+    display: flex;
+    flex-direction: column;
+}
+.fuentes, .text{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3rem ;
+    font-weight: bold;
+    
+}
+.form-neon label{
+    font-size: 3rem;
+}
+.form-neon, .text, .fuentes, .neon-crea, .form-neon .boton{
+    flex: 1;
+}
+.form-neon input[type="text"], .form-neon select{
+    padding: 1rem;
+    border: none;
+    border-radius: 15px;
+}
+.form-neon input[type="text"]:focus, .form-neon select:focus{
+    border: 2px solid #ff12a5;
+    outline: none;
+}
+
+@media(min-width:1000px){
+    .form-container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;    
+        justify-items: center;
+    }
+    
+}
+
+.neon-crea h3{
+    width: 100%;
+    font-size: 15vw;
+    color: white;
+    font-weight: normal;
+    text-shadow: 0  0 5px #ff12a5,  0  0 15px #ff12a5,  0  0 30px #ff12a5;
+    margin: 0;
+    overflow: hidden;
+   
+}
+@media(min-width:700px){
+    .neon-crea h3{
+        font-size: 10rem;
+    }
+}
+.boton{
+    font-weight: bold;
+    cursor: pointer;
+    width: 70%;
+    
+}
+.boton:hover{
+    background-color: #ff12a5;
+}
