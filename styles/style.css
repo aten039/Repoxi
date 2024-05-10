@@ -146,14 +146,15 @@ img{
     font-size: 2rem;
 }
 
+
 /*hover del menu y boton*/
-.menu-neon, .menu-publicidad{
+.menu-neon, .menu-publicidad, .menu-hover{
     transition: all 0.5s ease;
 }
-
-.menu-neon:hover{
+.menu-hover:hover{
     color: #ff12a5;
 }
+
 .menu-publicidad:hover{
     color:  #244c9c  ;
 }
@@ -217,6 +218,30 @@ img{
         font-size: 6rem;
     }
 }
+/*banner neon!!!!!*/
+.text-banner-neon{
+    text-transform: uppercase;
+    rotate: -15deg;
+    font-size: 5rem;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    left: 25px;
+    font-weight: bold;
+    color: #ff12a5;
+}
+
+.text-banner-neon span{
+    color: white;
+}
+@media(min-width:1200px){
+    .text-banner-neon{
+        font-size: 8rem;
+        top: 5px;
+    }
+}
+
 
 /*iconos*/
 .informacion{
