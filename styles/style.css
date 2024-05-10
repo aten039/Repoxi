@@ -104,7 +104,7 @@ img{
     cursor: pointer;
 }
 
-@media(max-width: 700px){
+@media(max-width: 1200px){
     .menu{
         padding: 3rem;
         position: absolute;
@@ -124,7 +124,7 @@ img{
   
 }
 
-@media(min-width: 700px){
+@media(min-width: 1200px){
 
     .menu-img{
         display: none;
@@ -326,6 +326,10 @@ footer{
     font-weight: normal;
     text-align: left;
     gap: 2rem;
+}
+
+.politicas a:hover{
+    color: #ff12a5;
 }
 
 #dragonBytes a{
