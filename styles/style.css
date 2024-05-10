@@ -46,6 +46,7 @@ body{
     color: white;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     margin: 0;
+   
 }
 input[type="submit"] {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -83,13 +84,14 @@ img{
     margin: 0;
     display: flex;
     justify-content: space-between;
-    padding: 0 5rem;
+    padding: 0 4rem;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     align-items: center;
     z-index: 100;
+   
 
     background: rgba(0, 0, 0, 0.90);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -277,6 +279,7 @@ footer{
     -webkit-backdrop-filter: blur(3.7px);
     text-align: center;
     font-size: 2rem;
+    
 }
 .footer{
     display: flex;
