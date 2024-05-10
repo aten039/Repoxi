@@ -8,12 +8,13 @@
 .ultimo-crecer{
     text-align: right;
     margin-right: 2rem;
-    margin-bottom: 5rem;
+    
 }
 @media(min-width:1400px){
     .crecer{
         display: flex;
-        gap: 1rem;
+        gap: 10rem;
+        align-items: center;
         
     }
 
@@ -25,21 +26,18 @@
 .icono-crecer{
     width: 5rem;
 }
-
-
-    .crecer ul{
-        display: flex;
-        margin: 5rem 0;
-        gap: 2rem;
-        flex-wrap: wrap;
-        
-    }
-
+.crecer ul{
+    display: flex;
+    margin: 5rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
 .crecer ul div{
     flex-grow: 1;
 }
-
-
+.conocenos{
+    margin-top: 4rem;
+}
 
 /*Serrvicios*/
 .repoxi-neon, .repoxi-publicidad, .repoxi-rotulacion
@@ -62,7 +60,7 @@
     }
 }
 .servicio{
-    margin: 2rem 0;
+    margin: 2rem 0 8rem 0 ;
     background: rgba(255, 255, 255, 0.10);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(3.7px);
@@ -122,4 +120,13 @@
 
 .boton_servicio-neon:hover{
     background-color: #ff12a5;
+}
+.boton_servicio-neon{
+    border: 2px solid #ff12a5;
+}
+.boton_servicio-publicidad:hover{
+    background-color: blue;
+}
+.boton_servicio-publicidad{
+    border: 2px solid blue;
 }

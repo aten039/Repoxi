@@ -1,0 +1,123 @@
+/*banner*/
+.text-banner-neon{
+    text-transform: uppercase;
+    rotate: -15deg;
+    font-size: 5rem;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    left: 25px;
+    font-weight: bold;
+    color: #ff12a5;
+}
+
+.text-banner-neon span{
+    color: white;
+}
+@media(min-width:1200px){
+    .text-banner-neon{
+        font-size: 8rem;
+        top: 5px;
+    }
+}
+
+
+/*informacion*/
+.informacion-neon{
+    background-color: rgba(255, 255, 255, 0.20);
+    padding: 5rem;
+}
+
+
+/*neones slider*/
+
+.slider-titulo{
+    font-size: 6vw;
+    margin: 8rem 0 0 0;
+    text-align: center;
+
+}
+
+.slider-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-images{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.slider-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.slider-img{
+    width: 110px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.7s ease;
+    border: 1px solid #ff12a5;
+
+}
+
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+    height: 380px;
+}
+
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(4){
+    height: 460px;
+}
+.slider-images .slider-img:nth-child(3){
+    height: 565px;
+}
+
+.slider-img h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: -10%;
+    transform: rotate(270deg);
+    transition: all 0.7s ease;
+}
+
+.details{
+    position: absolute;
+    bottom: 15px;
+    left: 43px;
+    display: none;
+}
+.details h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.7s ease;
+}
+
+.slider-img.active{
+    width: 580px !important;
+    height: 650px !important;
+}
+.slider-img.active h1{
+    display: none;
+}
+.slider-img.active .details{
+    display: block;
+}
+
+/*crea tu neon*/
