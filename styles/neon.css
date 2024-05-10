@@ -291,7 +291,8 @@
     font-weight: bold;
     cursor: pointer;
     width: 70%;
-    
+    border: 2px solid #ff12a5;
+    font-family: 'Poppins' Arial, Helvetica, sans-serif;
 }
 .boton:hover{
     background-color: #ff12a5;
