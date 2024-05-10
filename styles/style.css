@@ -179,13 +179,13 @@ img{
 /* Contenido*/
 .titulo{
     text-align: center;
-    font-size: 10vw;
+    font-size: 5rem;
     margin: 10rem 0 3rem 0 ;
     margin-top: 10rem;
 }
 @media(min-width:1000px){
     .titulo{
-        font-size: 6vw;
+        font-size: 5rem;
     }
 }
 .banner{
@@ -319,7 +319,14 @@ footer{
     }
     
 }
-
+.politicas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: left;
+    gap: 2rem;
+}
 
 #dragonBytes a{
     font-family: 'Cascadia Code', Arial, Helvetica, sans-serif;
