@@ -118,15 +118,3 @@
 
 /*botones hover*/
 
-.boton_servicio-neon:hover{
-    background-color: #ff12a5;
-}
-.boton_servicio-neon{
-    border: 2px solid #ff12a5;
-}
-.boton_servicio-publicidad:hover{
-    background-color: blue;
-}
-.boton_servicio-publicidad{
-    border: 2px solid blue;
-}
