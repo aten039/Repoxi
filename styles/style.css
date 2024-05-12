@@ -91,7 +91,6 @@ img{
     right: 0;
     align-items: center;
     z-index: 100;
-   
 
     background: rgba(0, 0, 0, 0.90);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -235,6 +234,7 @@ img{
     left: 25px;
     font-weight: bold;
     color: #ff12a5;
+    overflow: hidden;
 }
 
 .text-banner-neon span{

@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c | rewrite_module>
+    AddType text/javascript .js
+
+    RewriteEngine on
+    RewriteBase / 
+
+    RewriteRule ^crea-neon creaNeon.html [L]
+    RewriteRule ^conoce-neones neon.html [L]
+    RewriteRule ^quienes-somos nosotros.html [L]
+    RewriteRule ^garantias garantia.html [L]
+    RewriteRule ^reembolsos reembolso.html [L]
+    RewriteRule ^envios envios.html [L]
+    RewriteRule ^contacto contacto.html [L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d 
+   
+    RewriteRule ^ index.html [L] 
+
+    
+</IfModule>
