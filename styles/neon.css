@@ -277,11 +277,63 @@
     font-size: 15vw;
     color: white;
     font-weight: normal;
-    text-shadow: 0  0 5px #ff12a5,  0  0 15px #ff12a5,  0  0 30px #ff12a5;
+    
     margin: 0;
     overflow: hidden;
-   
+    text-wrap: wrap;
 }
+.circulo-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row !important;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.circulo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+h3[data-color="rosado"]{
+    text-shadow: 0  0 5px #ff12a5,  0  0 15px #ff12a5,  0  0 30px #ff12a5;
+}
+#rosado{
+    background-color: #ff12a5;
+}
+h3[data-color="morado"]{
+    text-shadow: 0  0 5px #7100d3,  0  0 15px #7100d3,  0  0 30px #7100d3;
+}
+#morado{
+    background-color: #7100d3;
+}
+h3[data-color="amarillo"]{
+    text-shadow: 0  0 5px #F7cf6d,  0  0 15px #F7cf6d,  0  0 30px #F7cf6d;
+}
+#amarillo{
+    background-color: #F7cf6d;
+}
+h3[data-color="azul"]{
+    text-shadow: 0  0 5px #2b00ff,  0  0 15px #2b00ff,  0  0 30px #2b00ff;
+}
+#azul{
+    background-color: #2b00ff;
+}
+h3[data-color="cyan"]{
+    text-shadow: 0  0 5px #70cff9,  0  0 15px #70cff9,  0  0 30px #70cff9;
+}
+#cyan{
+    background-color: #70cff9;
+}
+h3[data-color="blanco"]{
+    text-shadow: 0  0 5px #Ffffff,  0  0 15px #Ffffff,  0  0 30px #Ffffff;
+}
+#blanco{
+    background-color: #Ffffff;
+}
+
 @media(min-width:700px){
     .neon-crea h3{
         font-size: 10rem;
@@ -296,4 +348,35 @@
 }
 .boton:hover{
     background-color: #ff12a5;
+}
+
+.widget{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid #ff12a5;
+    padding: 5px;
+    margin-top: 3rem;
+}
+.widget-content{
+    border-radius: 15px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0;
+    left: 20px;
+    
+    width: 50%;
+    height: 100%;
+    background-color: #ff12a5;
+    transition: all 0.7s ease;
+}
+.encendido{
+    right: 0;
+    left: auto;
+}
+.apagado{
+    right: auto;
+    left: 0;
 }
