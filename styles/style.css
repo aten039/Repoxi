@@ -293,8 +293,8 @@ img{
 }
 .icono-descripcion{
     font-size: 2rem;
+    text-align: left;
 }
-
 
 
 
@@ -347,9 +347,8 @@ footer{
 .redes-sociales{
     display: flex;
     gap: 5rem;
-    margin-bottom: 5rem ;
+    margin: 5rem auto;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-
