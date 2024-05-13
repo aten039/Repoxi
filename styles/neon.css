@@ -385,13 +385,20 @@ h3[data-color="blanco"]{
 
 .banner-final-neon{
     width: 80%;
-    height: 300px;
+    height: 100px;
     background-image: url('/build/img/neonflez.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
+@media(min-width:700px){
+    
+    .banner-final-neon{
+        height: 300px;
+    }
+   
+}
 
 
 /* contacto  */

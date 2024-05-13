@@ -185,11 +185,11 @@ img{
     text-align: center;
     font-size: 5rem;
     margin: 10rem 0 3rem 0 ;
-    margin-top: 10rem;
+    
 }
 @media(min-width:1000px){
     .titulo{
-        font-size: 5rem;
+        font-size: 7rem;
     }
 }
 .banner{
