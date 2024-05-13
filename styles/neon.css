@@ -54,36 +54,67 @@
     color: #ff12a5;
 }
 
-/*banner*/
-.text-banner-neon{
-    text-transform: uppercase;
-    rotate: -15deg;
-    font-size: 5rem;
-    text-align: center;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    left: 25px;
-    font-weight: bold;
-    color: #ff12a5;
-}
 
-.text-banner-neon span{
-    color: white;
-}
-@media(min-width:1200px){
-    .text-banner-neon{
-        font-size: 8rem;
-        top: 5px;
-    }
-}
 
 
 /*informacion*/
 .informacion-neon{
-    background-color: rgba(255, 255, 255, 0.20);
     padding: 5rem;
+    width: 90%;
+    font-weight: bold;
+
 }
+.informacion-neon div{
+    flex: 1;
+}
+.informacion-neon h3, .informacion-neon p{
+    text-align: center;
+}
+.informacion-neon h3{
+    font-size: 2.3rem;
+}
+
+@media(min-width:700px){
+    .informacion-neon{
+        display: flex;
+        justify-content: space-between;
+      
+    }
+}
+
+.informacion-neon-detalles{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.informacion-neon-detalles h3{
+    text-align: center;
+    font-size: 2.3rem;
+}
+.informacion-neon-personalizado, .informacion-neon-materiales{
+    margin-bottom: 5rem;
+    
+}
+
+@media(min-width:1000px){
+    .informacion-neon-personalizado, .informacion-neon-materiales{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        margin-bottom: 5rem;
+    }
+    .informacion-neon-materiales{
+        flex-direction: row-reverse;
+    }
+    .informacion-neon-detalles div{
+        flex: 1;
+    }
+
+}
+
+/* detalles personaliza-materiales*/
+
 
 
 /*neones slider*/
@@ -134,7 +165,7 @@
     height: 460px;
 }
 .slider-images .slider-img:nth-child(3){
-    height: 565px;
+    height: 560px;
 }
 
 .slider-img h1{
@@ -170,8 +201,8 @@
 }
 
 .slider-img.active{
-    width: 580px !important;
-    height: 610px !important;
+    width: 500px !important;
+    height: 560px !important;
 }
 .slider-img.active h1{
     display: none;
@@ -196,7 +227,7 @@
 }
 .list-card{
     padding: 1rem;
-    background-color: rgba(250, 250, 250, 0.1);
+   
     margin: 4rem 0;
    
 }
