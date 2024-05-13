@@ -141,6 +141,10 @@ img{
     font-size: 3rem;
     padding: 2rem;
     font-weight: bold;
+    transition: color 0.7s ease;
+}
+.logo:hover{
+    color: #ff12a5;
 }
 .menu{
     font-size: 2rem;
