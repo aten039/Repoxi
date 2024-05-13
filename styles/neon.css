@@ -59,9 +59,10 @@
 
 /*informacion*/
 .informacion-neon{
-    padding: 5rem;
-    width: 90%;
+    padding: 2rem;
+   
     font-weight: bold;
+    margin: 0 auto;
 
 }
 .informacion-neon div{
@@ -78,6 +79,7 @@
     .informacion-neon{
         display: flex;
         justify-content: space-between;
+        gap: 5rem;
       
     }
 }
@@ -437,9 +439,8 @@ h3[data-color="blanco"]{
 .contenedor-contacto{
     width: 80%;
     margin: 0 auto;
+    
 }
-@media(min-width:700px){
-    .contenedor-contacto{
-        width: 50%;
-    };
+.contenedor-contacto .icono{
+    background-color: black;
 }

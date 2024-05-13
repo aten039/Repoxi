@@ -187,11 +187,11 @@ img{
 /* Contenido*/
 .titulo{
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 5rem 0 3rem 0 ;
     
 }
-@media(min-width:800px){
+@media(min-width:700px){
     .titulo{
         font-size: 7rem;
     }
