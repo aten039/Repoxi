@@ -348,7 +348,7 @@ footer{
     display: flex;
     gap: 5rem;
     margin: 5rem auto;
-    flex-wrap: wrap;
+    
     justify-content: center;
     align-items: center;
 }
