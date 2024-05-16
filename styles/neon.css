@@ -229,7 +229,7 @@
 }
 .list-card{
     padding: 1rem;
-   
+    background-color: rgba(250, 250, 250, 0.1);
     margin: 4rem 0;
    
 }
