@@ -188,7 +188,7 @@ img{
 .titulo{
     text-align: center;
     font-size: 4rem;
-    margin: 5rem 0 3rem 0 ;
+    margin: 5rem auto 3rem auto ;
     
 }
 @media(min-width:700px){
