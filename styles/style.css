@@ -17,12 +17,6 @@ fuente poppins
 /* Fuentes */
 
 @font-face {
-    font-family: 'Cascadia Code';
-    src: url(/font/CascadiaCode-Bold.otf);
-    font-weight: bold;
-    font-style: bold;
-}
-@font-face {
     font-family: 'Poppins';
     src: url(/font/Poppins-Bold.ttf);
     font-weight: bold;
@@ -197,14 +191,13 @@ img{
     }
 }
 .banner{
-    background-image: none;
-    height: 50rem;
-    background-image: url('/build/img/banner-colorido.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
-    background-size: cover;
     position: relative;
+}
+.banner img{
+    
+    height: 50rem;
+    width: 100%;
+    
 }
 
 
@@ -258,7 +251,6 @@ img{
     margin-top: 2rem 0;
     display: flex;
     flex-direction: column;
-   
 }
 
 
@@ -307,7 +299,7 @@ img{
 /*footer*/
 footer{
     margin-top: 3rem;
-    padding: 3rem;
+    padding: 0 3rem 1rem 3rem;
     background: rgba(255, 255, 255, 0.10);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(3.7px);
@@ -352,7 +344,7 @@ footer{
 .redes-sociales{
     display: flex;
     gap: 5rem;
-    margin: 5rem auto;
+    margin: 3rem auto;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;

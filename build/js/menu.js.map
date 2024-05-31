@@ -1,0 +1,1 @@
+{"version":3,"file":"menu.js","names":["$","on","slideToggle"],"sources":["js/menu.js"],"mappings":"AAAAA,GAAE,WAEIA,EAAE,aAAaC,GAAG,SAAS,WACzBD,EAAE,SAASE,aACb,GAEN","ignoreList":[],"sourcesContent":["$(function(){\r\n\r\n      $('.menu-img').on('click', function(){\r\n        $('.menu').slideToggle();\r\n      })\r\n\r\n})"]}
