@@ -32,7 +32,7 @@
     gap: 2rem;
     flex-wrap: wrap;
 }
-.crecer ul div{
+.crecer ul li{
     flex-grow: 1;
 }
 .conocenos{

@@ -197,6 +197,7 @@ img{
     }
 }
 .banner{
+    background-image: none;
     height: 50rem;
     background-image: url('/build/img/banner-colorido.jpg');
     background-repeat: no-repeat;
