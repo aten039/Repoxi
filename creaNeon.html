@@ -9,18 +9,20 @@
     <title>Crea tu neón y cotiza.</title>
 
   
-    <script src="/build/js/jquery.js" type="text/javascript" defer></script>
-    <script src="/build/js/menu.js" type="text/javascript" defer></script>
-
-    <script src="https://kit.fontawesome.com/aa20b3c854.js" crossorigin="anonymous" defer></script>
     
+    
+    <link rel="preload" href="/styles/style.css" as="style">
     <link href="/styles/style.css" rel="stylesheet">
+    <link rel="preload" href="/styles/principal.css" as="style">
     <link href="/styles/principal.css" rel="stylesheet">
-
-    <script src="/build/js/neon.js" type="text/javascript" defer></script>
-   
+    <link rel="preload" href="/styles/neon.css" as="style">
     <link href="/styles/neon.css" rel="stylesheet">
 
+    <script src="/build/js/jquery.js" type="text/javascript" defer></script>
+    <script src="/build/js/menu.js" type="text/javascript" defer></script>
+    <script src="/build/js/neon.js" type="text/javascript" defer></script>
+    <script src="https://kit.fontawesome.com/aa20b3c854.js" crossorigin="anonymous" defer></script>
+   
 </head>
 <body>
 
@@ -42,7 +44,7 @@
     <main class="contenido">
 
         <div class="banner">
-            <img src="/build/img/banner-colorido.jpg" alt="banner principal" fetchpriority="high">
+            <img src="/build/img/banner-colorido.jpg" alt="banner principal" fetchpriority="high"  width="1000" height="500">
             <p class="text-banner-neon">Innovación que <br><span>brilla</span><br>Neón Flex</p>
         </div>
 
@@ -62,8 +64,8 @@
                         >
                     </div>
                     <div>
-                        <label class="fuentes" for="fuente">Elije la fuente</label>
-                        <select class="fuentes" name="fuente" id="fuentes">
+                        <label class="fuentes" for="fuentes">Elije la fuente</label>
+                        <select class="fuentes" name="fuentes" id="fuentes">
                             <option class="mgSerif" value="mgSerif">Mg Serif</option>
                             <option class="genit" value="genit">Genit demo</option>
                             <option class="mgScript" value="mgScript">Mg Script</option>
@@ -89,7 +91,7 @@
                 <div class="neon-crea">
                     <h3 class="mgSerif" data-color="rosado">Prueba Tu Neon</h3>
                     <button class="widget">
-                        <div class="widget-content encendido"></div>
+                        <div class="widget-content encendido" title="boton encendido y apagado"></div>
                     </button>
                 </div>
                 

@@ -9,15 +9,15 @@
     <meta name="description" content="Crea tu propio neon personalizado. Ven y cotiza con nosotros. Envio a todo el pais. Neones en venezuela">
     <title>Repoxi Venezuela</title>
 
+    <link rel="preload" href="/styles/style.css" as="style">
+    <link href="/styles/style.css" rel="stylesheet" >
+    <link rel="preload" href="/styles/principal.css" as="style">
+    <link href="/styles/principal.css" rel="stylesheet">
    
     <script src="/build/js/jquery.js" type="text/javascript" defer></script>
     <script src="/build/js/menu.js" type="text/javascript" defer></script>
 
     <script src="https://kit.fontawesome.com/aa20b3c854.js" crossorigin="anonymous" defer></script>
-    
-    <link href="/styles/style.css" rel="stylesheet" async>
-    <link href="/styles/principal.css" rel="stylesheet" async>
-
 </head>
 <body>
 
@@ -39,7 +39,7 @@
     <main class="contenido">
 
         <div class="banner">
-            <img src="/build/img/banner-colorido.jpg" alt="banner principal" loading="lazy">
+            <img src="/build/img/banner-colorido.jpg" alt="banner principal" fetchpriority="high" width="1000" height="500">
             <p class="text-banner-neon">Innovación que <br><span>brilla</span><br>Neón Flex</p>
         </div>
 

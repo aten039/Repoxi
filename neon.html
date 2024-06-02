@@ -8,19 +8,19 @@
     <meta name="description" content="Crea tu propio neon personalizado. Ven y cotiza con nosotros. Envio a todo el pais. Neones en venezuela">
     <title>Descubre nuestros neones.</title>
 
+    <link rel="preload" href="/styles/style.css" as="style">
+    <link href="/styles/style.css" rel="stylesheet">
+    <link rel="preload" href="/styles/principal.css" as="style">
+    <link href="/styles/principal.css" rel="stylesheet">
+    <link rel="preload" href="/styles/neon.css" as="style">
+    <link href="/styles/neon.css" rel="stylesheet">
+
     
     <script src="/build/js/jquery.js" type="text/javascript" defer></script>
     <script src="/build/js/menu.js" type="text/javascript" defer></script>
-
-    <script src="https://kit.fontawesome.com/aa20b3c854.js" crossorigin="anonymous" defer></script>
-    
-    <link href="/styles/style.css" rel="stylesheet">
-    <link href="/styles/principal.css" rel="stylesheet">
-
     <script src="/build/js/sliderNeon.js" type="text/javascript" defer></script>
-
-    <link href="/styles/neon.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/aa20b3c854.js" crossorigin="anonymous" defer></script>
+  
 </head>
 <body>
 
@@ -42,7 +42,7 @@
     <main class="contenido">
 
         <div class="banner">
-            <img src="/build/img/banner-colorido.jpg" alt="banner principal" loading="lazy">
+            <img src="/build/img/banner-colorido.jpg" alt="banner principal" fetchpriority="high" width="1000" height="500">
             <p class="text-banner-neon">Innovación que <br><span>brilla</span><br>Neón Flex</p>
         </div>
 
@@ -51,7 +51,7 @@
             <h1 class="titulo">¿Quieres darle estilo a tu marca?</h1>
             <div class="informacion-neon">
                 <div>
-                    <h3>Un letrero neón es lo que necesitas!</h3>
+                    <h2>Un letrero neón es lo que necesitas!</h2>
                     <p>Nuestros neones rebosan de estilo y creatividad. Fabricados minuciosamente para lograr la mayor calidad posible. Tomamos tus ideas y las volvémos una realidad, exprésate a través de nuestros neones.</p>
                     <p>Ven y descubrelos.</p>
                 </div>
@@ -59,9 +59,9 @@
                 <div>
                     <h3>Cotiza tu neón en:</h3>
                     <div class="redes-sociales">
-                        <a href="https://www.instagram.com/repoxi.ve?igsh=MTY0amN5bmE2cm0xNw==" ><i class="fa-brands fa-instagram fa-4x "></i></a>
-                        <a href="https://wa.link/un2vy6" ><i class="fa-brands fa-whatsapp fa-4x"></i></a>
-                        <a href="mailto:repoxidm@gmail.com?body=Hola%2C%20Repoxi!%0AMuy%20cordial%20saludo!%0AQuisiera%20informaci%C3%B3n%20sobre%20sus%20servicios.%0AMis%20dudas%20son%3A%0A" ><i class="fa-brands fa-google fa-4x"></i></a>
+                        <a href="https://www.instagram.com/repoxi.ve?igsh=MTY0amN5bmE2cm0xNw==" ><i class="fa-brands fa-instagram fa-4x " title="instagram"></i></a>
+                        <a href="https://wa.link/un2vy6" ><i class="fa-brands fa-whatsapp fa-4x" title="whatsapp"></i></a>
+                        <a href="mailto:repoxidm@gmail.com?body=Hola%2C%20Repoxi!%0AMuy%20cordial%20saludo!%0AQuisiera%20informaci%C3%B3n%20sobre%20sus%20servicios.%0AMis%20dudas%20son%3A%0A" title="gmail" ><i class="fa-brands fa-google fa-4x"></i></a>
                     </div>
                 </div>
                
@@ -78,7 +78,7 @@
                         <p>Expresa una idea!</p>
                     </div>
                     
-                    <div><img src="/build/img/cumple.jpg"></div>
+                    <div><img src="/build/img/cumple.jpg" alt="neon cumpleaños"></div>
                 </div>
                 <div class="informacion-neon-materiales">
                     <div>
@@ -86,7 +86,7 @@
                         <p>Utilizamos técnicas de fabricación avanzadas y materiales de primera calidad para garantizar la durabilidad y el rendimiento de nuestros letreros de neón.</p>
                     </div>
                     
-                    <div><img src="/build/img/materiales.jpg"></div>
+                    <div><img src="/build/img/materiales.jpg" alt="materiales"></div>
                 </div>
 
             </div>
