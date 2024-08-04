@@ -9,30 +9,29 @@
     <meta name="description" content="Crea tu propio neon personalizado. Ven y cotiza con nosotros. Envio a todo el pais. Neones en venezuela">
     <title>Repoxi Venezuela</title>
 
-    <script src="build/js/jquery.js" type="text/javascript"></script>
-    <script src="build/js/jquery.bxslider.min.js" type="text/javascript"></script>
-    <script src="https://kit.fontawesome.com/aa20b3c854.js" crossorigin="anonymous"></script>
-
-    <script src="build/js/index.js" type="text/javascript"></script>
-
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="styles/jquery.bxslider.min.css" rel="stylesheet">
+    <link rel="preload" href="/styles/style.css" as="style">
+    <link href="/styles/style.css" rel="stylesheet" >
+    <link rel="preload" href="/styles/principal.css" as="style">
+    <link href="/styles/principal.css" rel="stylesheet">
+    
+ <script src="/build/js/menu.js" type="text/javascript" defer></script>
+    <script src="/build/js/jquery.js" type="text/javascript" defer></script>
    
-    <link href="styles/style.css" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/aa20b3c854.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
 
     <header class="header">
-        <a href="index.html" class="logo">repoxi</a>
+        <a href="/" class="logo">repoxi</a>
         <nav class="">
             <img class="menu-img" src="build/img/menu.png" alt="menu">
             <ul class="menu">
-                <li><a class="menu-hover" href="index.html">Inicio</a></li>
+                <li><a class="menu-hover" href="/">Inicio</a></li>
                 <!-- <li><a class="menu-publicidad" href="publicidad.html">Publicidad</a></li> -->
-                <li><a class="menu-hover" href="neon.html">Descubre Nuestros Neones</a></li>
-                <li><a class="menu-hover" href="creaNeon.html">Cotiza Tu Neón</a></li>
-                <li><a class="menu-hover" href="nosotros.html">¿Quiénes somos?</a></li>
+                <li><a class="menu-hover" href="/conoce-neones">Descubre Nuestros Neones</a></li>
+                <li><a class="menu-hover" href="/crea-neon">Cotiza Tu Neón</a></li>
+                <li><a class="menu-hover" href="/quienes-somos">¿Quiénes somos?</a></li>
             </ul>
         </nav>
     </header>
@@ -41,12 +40,20 @@
     <main class="contenido">
 
         <div class="banner">
-            <div class="sombra-banner"></div>
-            <p class="text-banner">Expertos en Publicidad</p>
+            <img src="/build/img/banner-colorido.jpg" alt="banner principal" fetchpriority="high" width="1000" height="500">
+            <p class="text-banner-neon">Innovación que <br><span>brilla</span><br>Neón Flex</p>
         </div>
 
-        <h1 class="titulo">Politicas de garantías.</h1>
+        <div class="contenedor">
+            <h1 class="titulo">Política de garantía.</h1>
 
+            <p>En Repoxi, entendemos la importancia de brindar productos de calidad que superen las expectativas de nuestros clientes. Por eso, respaldamos cada letrero de neón que fabricamos con nuestra garantía de calidad incomparable.</p>
+    
+            <p>Nuestros letreros de neón están diseñados y fabricados con los más altos estándares de excelencia, utilizando materiales duraderos y técnicas de fabricación de vanguardia. Estamos tan seguros de la calidad de nuestros productos que ofrecemos una garantía integral que cubre cualquier defecto de fabricación.</p>
+    
+            <p>Además, para garantizar la plena satisfacción de nuestros clientes, ofrecemos un mes completo de servicio técnico gratuito para tu letrero de neón. Durante este período, nuestro equipo de expertos estará disponible para brindarte asistencia técnica y resolver cualquier problema que puedas enfrentar con tu letrero. Ya sea una reparación, ajuste o simplemente una consulta, estamos aquí para ayudarte.</p>
+        </div>
+        
     </main>
 
 
@@ -56,22 +63,24 @@
             <div class="footer-informacion">
                 <p>Derechos Reservados Repoxi &copy;</p> 
                 <div class="politicas">
-                    <a href="garantia.html">Politicas de garantía</a>
-                    <a href="reembolso.html">Politicas de reembolso</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="envios.html">Politica de envios</a>
+
+                    <a href="/garantias">Política de garantía</a>
+                    <a href="/reembolsos">Política de reembolso</a>
+                    <a href="/contacto">Contacto</a>
+                    <a href="/envios">Política de envíos</a>
+
                 </div>
             </div>
             <div>
                 <p>Información de Contacto:</p>
                 <div class="redes-sociales">
-                    <a href="https://www.instagram.com/repoxi.ve?igsh=MTY0amN5bmE2cm0xNw==" ><i class="fa-brands fa-instagram fa-2x "></i></a>
-                    <a href="https://wa.link/un2vy6" ><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-                    <a href="#" ><i class="fa-brands fa-google fa-2x"></i></a>
+                    <a href="https://www.instagram.com/repoxi.ve?igsh=MTY0amN5bmE2cm0xNw==" title="instagram ><i class="fa-brands fa-instagram fa-2x " alt="instagram"></i></a>
+                    <a href="https://wa.link/un2vy6" ><i class="fa-brands fa-whatsapp fa-2x" alt="ws" title="whatsapp"></i></a>
+                    <a href="mailto:repoxidm@gmail.com?body=Hola%2C%20Repoxi!%0AMuy%20cordial%20saludo!%0AQuisiera%20informaci%C3%B3n%20sobre%20sus%20servicios.%0AMis%20dudas%20son%3A%0A" title="gmail" ><i class="fa-brands fa-google fa-2x" alt="gmail"></i></a>
                 </div>
             </div>
         </div>
-        <div  id="dragonBytes">Create by: <a href="index.html">Dragon Bytes</a></div>
+        <div  id="dragonBytes">Create by: <a href="/">Dragon Bytes</a></div>
     </footer>
 
 

@@ -1,13 +1,1 @@
-.nosotros{
-    width: 80%;
-    background-color: rgba(250, 250, 250, 0.2);
-    color: white;
-    padding: 20px;
-    margin: 0 auto;
-}
-.nosotros h2{
-    text-align: center;
-}
-.nosotros p{
-    font-size: 2rem;
-}
+.nosotros{color:#fff;margin:0 auto;padding:20px;width:80%}.nosotros h2{text-align:center}.nosotros p{font-size:2rem}
