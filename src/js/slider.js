@@ -3,7 +3,7 @@ $(function(){
     $('.bxslider').bxSlider({
         infiniteLoop: true,
         auto: false,
-        hideControlOnEnd: true,
+        hideControlOnEnd: false,
         slideWidth: 600
       });
 
