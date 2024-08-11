@@ -1,9 +1,9 @@
 $(function(){
 
     $('.bxslider').bxSlider({
-        infiniteLoop: false,
+        infiniteLoop: true,
         auto: false,
-        hideControlOnEnd: false,
+        hideControlOnEnd: true,
         slideWidth: 600
       });
 
