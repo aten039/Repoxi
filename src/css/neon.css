@@ -1,0 +1,446 @@
+/*Fuentes para los neones*/
+
+@font-face {
+    font-family: 'Genit';
+    src: url(/font/neon/genit_demo.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+.genit{
+    font-family: Genit, Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'MgScript';
+    src: url(/font/neon/MG_script.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+.mgScript{
+    font-family: 'MgScript', Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'MgSerif';
+    src: url(/font/neon/MG_serif.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+.mgSerif{
+    font-family: 'MgSerif', Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'Monsieur';
+    src: url(/font/neon/MonsieurLaDoulaise.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.monsieur{
+    font-family: 'Monsieur', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Ruthligos';
+    src: url(/font/neon/Ruthligos.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.ruthligos{
+    font-family: 'Ruthligos', Arial, Helvetica, sans-serif;
+}
+
+
+/*menu*/
+
+.menu-neon{
+    color: #ff12a5;
+}
+
+
+
+
+/*informacion*/
+.informacion-neon{
+    padding: 2rem;
+   
+    font-weight: bold;
+    margin: 0 auto;
+
+}
+.informacion-neon div{
+    flex: 1;
+}
+.informacion-neon h3, .informacion-neon p{
+    text-align: center;
+}
+.informacion-neon h3{
+    font-size: 2.3rem;
+}
+
+@media(min-width:700px){
+    .informacion-neon{
+        display: flex;
+        justify-content: space-between;
+        gap: 5rem;
+      
+    }
+}
+
+.informacion-neon-detalles{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.informacion-neon-detalles h3{
+    text-align: center;
+    font-size: 2.3rem;
+}
+.informacion-neon-personalizado, .informacion-neon-materiales{
+    margin-bottom: 5rem;
+    
+}
+
+@media(min-width:1000px){
+    .informacion-neon-personalizado, .informacion-neon-materiales{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        margin-bottom: 5rem;
+    }
+    .informacion-neon-materiales{
+        flex-direction: row-reverse;
+    }
+    .informacion-neon-detalles div{
+        flex: 1;
+    }
+
+}
+
+/* detalles personaliza-materiales*/
+
+
+
+/*neones slider*/
+
+.slider-titulo{
+    font-size: 6vw;
+    margin: 8rem 0 0 0;
+    text-align: center;
+
+}
+
+.slider-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slider-images{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+.slider-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.slider-img{
+    width: 110px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.7s ease;
+    border: 1px solid #ff12a5;
+
+}
+
+.slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+    height: 380px;
+}
+
+.slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(4){
+    height: 460px;
+}
+.slider-images .slider-img:nth-child(3){
+    height: 560px;
+}
+
+.slider-img h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    transform: rotate(270deg);
+    transition: all 0.7s ease;
+
+    display: none;
+}
+
+.details{
+    position: absolute;
+    bottom: 15px;
+    left: 43px;
+    display: none;
+}
+.details h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.7s ease;
+}
+
+.slider-img.active{
+    width: 500px !important;
+    height: 560px !important;
+}
+.slider-img.active h1{
+    display: none;
+}
+.slider-img.active .details{
+    display: block;
+}
+.slider-neon{
+    display: none;
+}
+
+@media(min-width:1200px){
+    .slider-neon{
+        display: block;
+    }
+    .list-neon{
+        display: none;
+    }
+}
+.list-neon h2{
+    margin-bottom: 2rem;
+}
+.list-card{
+    padding: 1rem;
+    background-color: rgba(250, 250, 250, 0.1);
+    margin: 4rem 0;
+   
+}
+.list-card h2{
+    font-size: 3rem;
+    text-align: right;
+    margin: 0;
+}
+
+@media(min-width:800px){
+    .list-container-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+    .list-card{
+        width: 100%;
+        margin: 0;
+    }
+    .list-card img{
+        width: 100%;
+        height: 360px;
+    }
+}
+
+
+
+/*crea tu neon*/
+
+.form-container{
+    background-color: rgba(250, 250, 250, 0.1);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.form-neon div{
+    display: flex;
+    flex-direction: column;
+}
+.fuentes, .text{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3rem ;
+    font-weight: bold;
+    
+}
+.form-neon label{
+    font-size: 3rem;
+}
+.form-neon, .text, .fuentes, .neon-crea, .form-neon .boton{
+    flex: 1;
+}
+.form-neon input[type="text"], .form-neon select{
+    padding: 1rem;
+    border: none;
+    border-radius: 15px;
+}
+.form-neon input[type="text"]:focus, .form-neon select:focus{
+    border: 2px solid #ff12a5;
+    outline: none;
+}
+
+@media(min-width:1000px){
+    .form-container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;    
+        justify-items: center;
+    }
+    
+}
+
+.neon-crea h3{
+    width: 100%;
+    font-size: 15vw;
+    color: white;
+    font-weight: normal;
+    
+    margin: 0;
+    overflow: hidden;
+    text-wrap: wrap;
+}
+.circulo-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row !important;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.circulo{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+h3[data-color="rosado"]{
+    text-shadow: 0  0 5px #ff12a5,  0  0 15px #ff12a5,  0  0 30px #ff12a5;
+}
+#rosado{
+    background-color: #ff12a5;
+}
+h3[data-color="morado"]{
+    text-shadow: 0  0 5px #7100d3,  0  0 15px #7100d3,  0  0 30px #7100d3;
+}
+#morado{
+    background-color: #7100d3;
+}
+h3[data-color="amarillo"]{
+    text-shadow: 0  0 5px #F7cf6d,  0  0 15px #F7cf6d,  0  0 30px #F7cf6d;
+}
+#amarillo{
+    background-color: #F7cf6d;
+}
+h3[data-color="azul"]{
+    text-shadow: 0  0 5px #2b00ff,  0  0 15px #2b00ff,  0  0 30px #2b00ff;
+}
+#azul{
+    background-color: #2b00ff;
+}
+h3[data-color="cyan"]{
+    text-shadow: 0  0 5px #70cff9,  0  0 15px #70cff9,  0  0 30px #70cff9;
+}
+#cyan{
+    background-color: #70cff9;
+}
+h3[data-color="blanco"]{
+    text-shadow: 0  0 5px #Ffffff,  0  0 15px #Ffffff,  0  0 30px #Ffffff;
+}
+#blanco{
+    background-color: #Ffffff;
+}
+
+@media(min-width:700px){
+    .neon-crea h3{
+        font-size: 10rem;
+    }
+}
+.boton{
+    font-weight: bold;
+    cursor: pointer;
+    width: 70%;
+    border: 2px solid #ff12a5;
+    font-family: 'Poppins' Arial, Helvetica, sans-serif;
+}
+.boton:hover{
+    background-color: #ff12a5;
+}
+
+.widget{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid #ff12a5;
+    padding: 5px;
+    margin-top: 3rem;
+}
+.widget-content{
+    border-radius: 15px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0;
+    left: 20px;
+    
+    width: 50%;
+    height: 100%;
+    background-color: #ff12a5;
+    transition: all 0.7s ease;
+}
+.encendido{
+    right: 0;
+    left: auto;
+}
+.apagado{
+    right: auto;
+    left: 0;
+}
+
+/* banner final */
+
+.banner-final-neon{
+    width: 80%;
+    height: 100px;
+    background-image: url('/build/img/neonflez.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media(min-width:700px){
+    
+    .banner-final-neon{
+        height: 300px;
+    }
+   
+}
+
+
+/* contacto  */
+
+.contenedor-contacto{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.contenedor-contacto .icono{
+    background-color: black;
+}
