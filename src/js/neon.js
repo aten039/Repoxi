@@ -67,10 +67,7 @@ function creaNeon(){
 function crearNeon(clase, text, color){
     let neon = document.querySelector('.neon-crea');
     let texto = sanitizarTexto(text);
-    neon.innerHTML = `<h3 class="${clase}" data-color=${color}>${texto}</h3>
-    <button class="widget">
-                        <div class="widget-content encendido" title="boton encendido y apagado"></div>
-                    </button>`
+    neon.innerHTML = `<h3 class="${clase}" data-color=${color}>${texto}</h3>`
 }
 
 function cambiaColor(color){
